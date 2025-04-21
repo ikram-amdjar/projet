@@ -1,0 +1,141 @@
+
+body {
+    background-color: rgb(246, 210, 75);
+    
+    /* Centrage de rcorners */
+    
+}
+
+p {
+    color:gray;
+    text-align: center;
+    font-size: 50px;
+    
+  } 
+
+#image {
+   
+   
+    border-radius: 15px;
+    overflow: hidden;  /*  Ton image est un fichier SVG. Certains SVGs ont un fond blanc intégré qui cache les bords arrondis  */
+    display: block;
+    object-fit: cover;
+    position :absolute ;
+    width: 470px;  
+    height: 300px; 
+    top: 415px;     
+    left: 1280px;   
+    
+}
+
+
+
+#image2 {  
+   
+  position :absolute ;
+  top: 1017px;     
+  left: 1285px;
+  width: 50px;  
+  height: 50px;
+ 
+}
+
+
+
+/* utuliser le #  */
+
+#rcorners  {
+    border-radius: 15px;
+    background: white;
+    border: 2px solid black;
+    padding: 20px; 
+    width: 500px;
+    height: 670px;  
+    position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   box-shadow: 10px 10px 0 #111;
+   border-radius: 1rem;
+    
+  } 
+  
+ 
+
+  
+
+
+  div.learning-label {
+    padding: 10px 10px;
+    font-weight: bold;
+    background-color: rgb(246, 210, 75);
+    font-size: 25px;
+    position: absolute;  /* Nécessaire pour top/left */
+    top: 750px;     
+    left: 1280px;
+  }
+    
+   
+  
+
+  /*              <p style="margin-bottom: 16px;">Bonjour !</p>
+                  Alors, il y aura 16 pixels d’espace sous ce paragraphe avant que le prochain élément apparaisse.         */
+
+
+
+  
+  div.publish-date {
+    font-size: 22px;
+    color: #0f0f0ffd;
+    position: absolute;  /* Nécessaire pour top/left */
+    top: 815px;     
+    left: 1280px;
+  }
+  
+
+
+  div.title {
+    font-size: 28px;
+    font-weight: bold; /* en gras */
+    color: black;
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+    position: absolute;  /* Nécessaire pour top/left */
+    top: 860px;     
+    left: 1280px;
+  }
+
+  .title:hover {
+    color: rgb(246, 210, 75) ;
+  }
+  
+  div.description {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #555;
+    position: absolute;  /* Nécessaire pour top/left */
+    top: 920px;     
+    left: 1280px;
+  }
+  
+  .author {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-style: italic;
+    position: absolute;  /* Nécessaire pour top/left */
+    top: 1030px;     
+    left: 1350px;
+  }
+
+
+
+/* Tu veux cibler un élément avec une classe appelée image ?
+ Dans le HTML : <img class="image">
+ Dans le CSS : .image { border-radius: 10px; }   , donc on doit ajouter un point en css , .img 
+ 
+
+ ✅ Récap rapide
+
+Situation          	CSS correct
+class="image"	    .image { ... }
+id="image"        	#image { ... }             */
